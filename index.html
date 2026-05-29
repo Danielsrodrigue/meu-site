@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologia Agrícola e o Brasil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>AgroTech Brasil</h1>
+
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#brasil">Brasil</a></li>
+        <li><a href="#mundo">Mundo</a></li>
+        <li><a href="#tecnologia">Tecnologia</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <h2>Tecnologia agrícola reforça papel do Brasil</h2>
+      <p>
+        O agronegócio brasileiro se destaca mundialmente com inovação,
+        sustentabilidade e produtividade.
+      </p>
+
+      <button onclick="saibaMais()">Saiba Mais</button>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="cards" id="brasil">
+
+      <div class="card">
+        <h3>🌱 Agro no Brasil</h3>
+
+        <p>
+          O Brasil é um dos maiores produtores agrícolas do mundo,
+          liderando exportações de soja, milho, café e carne bovina.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🚜 Tecnologia no Campo</h3>
+
+        <p>
+          Máquinas inteligentes, drones, sensores e inteligência artificial
+          aumentam a produtividade no campo brasileiro.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌍 Impacto Global</h3>
+
+        <p>
+          O agronegócio brasileiro abastece mercados internacionais
+          e fortalece a economia global.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="tecnologia" id="tecnologia">
+      <h2>Inovação e Sustentabilidade</h2>
+
+      <p>
+        A agricultura moderna utiliza recursos tecnológicos para reduzir desperdícios,
+        melhorar a produção e preservar o meio ambiente.
+      </p>
+
+      <ul>
+        <li>Agricultura de precisão</li>
+        <li>Drones agrícolas</li>
+        <li>Monitoramento via satélite</li>
+        <li>Irrigação inteligente</li>
+        <li>Uso de Inteligência Artificial</li>
+      </ul>
+    </section>
+
+    <section class="mundo" id="mundo">
+      <h2>O Agro no Mundo</h2>
+
+      <p>
+        Países como Estados Unidos, China e Brasil lideram a produção agrícola global.
+        A tecnologia é o principal fator de crescimento sustentável no setor.
+      </p>
+
+      <div class="contador">
+        <h3 id="numero">0</h3>
+        <p>Toneladas produzidas por minuto no agro mundial</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contato">
+    <h2>AgroTech Brasil</h2>
+
+    <p>
+      Site desenvolvido para demonstrar o impacto da tecnologia agrícola
+      no Brasil e no mundo.
+    </p>
+
+    <p>© 2026 - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)),
+  url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.4);
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #90ee90;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: #2e8b57;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #246b45;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #2e8b57;
+}
+
+.tecnologia,
+.mundo {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.tecnologia h2,
+.mundo h2 {
+  margin-bottom: 20px;
+  color: #2e8b57;
+}
+
+.tecnologia ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.tecnologia li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contador {
+  margin-top: 40px;
+}
+
+.contador h3 {
+  font-size: 4rem;
+  color: #2e8b57;
+}
+
+footer {
+  background: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer h2 {
+  margin-bottom: 15px;
+}
+
+@media(max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)),
+  url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.4);
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #90ee90;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: #2e8b57;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #246b45;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #2e8b57;
+}
+
+.tecnologia,
+.mundo {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.tecnologia h2,
+.mundo h2 {
+  margin-bottom: 20px;
+  color: #2e8b57;
+}
+
+.tecnologia ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.tecnologia li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contador {
+  margin-top: 40px;
+}
+
+.contador h3 {
+  font-size: 4rem;
+  color: #2e8b57;
+}
+
+footer {
+  background: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer h2 {
+  margin-bottom: 15px;
+}
+
+@media(max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+}
+function saibaMais() {
+
+  alert(
+    "A tecnologia agrícola ajuda o Brasil a liderar a produção mundial com sustentabilidade e inovação."
+  );
+
+}
+
+let numero = document.getElementById("numero");
+
+let contador = 0;
+
+setInterval(() => {
+
+  contador += 150;
+
+  numero.innerHTML = contador.toLocaleString();
+
+}, 100);
